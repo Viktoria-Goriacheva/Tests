@@ -1,0 +1,17 @@
+2021-10-03 17:07:19.539 [main] INFO  ExLogger - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+
+2021-10-03 17:07:19.557 [main] INFO  ExLogger - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+
+2021-10-03 17:07:19.565 [main] INFO  ExLogger - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+
+2021-10-03 17:07:19.572 [main] INFO  ExLogger - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+
+2021-10-03 17:07:19.582 [main] INFO  ExLogger - Changed task with ID = 19 on new Project: Name Project: job9 | User: Name User: Jon | Priority: HIGH | Subject: maven | Type: online | Description: write
+
+2021-10-03 17:07:19.585 [main] INFO  ExLogger - Delete task Project: Name Project: job9 | User: Name User: Jon | Priority: HIGH | Subject: maven | Type: online | Description: write
+
+2021-10-03 17:07:19.619 [main] INFO  InfoLogger - Appointed new
+a descriptionName User: Jon
+2021-10-03 17:07:19.620 [main] INFO  InfoLogger - Name User: Jon Appointed new
+a priorityLOW
+2021-10-03 17:07:19.621 [main] INFO  InfoLogger - Name User: Jon Appointed new a type - online

@@ -1,0 +1,11 @@
+Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+Changed task with ID = 19 on new Project: Name Project: job9 | User: Name User: Jon | Priority: HIGH | Subject: maven | Type: online | Description: write
+Delete task Project: Name Project: job9 | User: Name User: Jon | Priority: HIGH | Subject: maven | Type: online | Description: write
+add task Project: Name Project: job1 | User: Name User: Jimm | Priority: null | Subject: null | Type: null | Description: null
+add task Project: Name Project: job2 | User: Name User: Jon | Priority: null | Subject: null | Type: null | Description: null
+add task Project: Name Project: job3 | User: Name User: Jon | Priority: null | Subject: null | Type: null | Description: null
+add task Project: Name Project: job4 | User: Name User: Jinni | Priority: null | Subject: null | Type: null | Description: null
+delete task Project: Name Project: job1 | User: Name User: Jimm | Priority: null | Subject: null | Type: null | Description: null
