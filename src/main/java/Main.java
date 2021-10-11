@@ -1,153 +1,142 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.io.IOException;
 import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import soft.FileWrite;
-import soft.Priority;
-import soft.Project;
-import soft.Service;
-import soft.Task;
-import soft.User;
+import soft.model.Priority;
+import soft.model.Project;
+import soft.model.Task;
+import soft.model.User;
+import soft.servis.database.ServisSQLite;
+import soft.servis.file.FileWrite;
+import soft.servis.file.ServiceFile;
 
-public class Main extends FileWrite {
+public class Main {
 
-  private static final Logger exLogger = LogManager.getLogger("ExLogger");
+  private static final Logger logger = LogManager.getLogger(Main.class);
   public static String path;
-  private static Connection connection;
-
-  public Main(String path) {
-    super(path);
-  }
+  public static String command;
 
   public static void main(String[] args) {
-    try {
+    try (FileWrite fileWrite = new FileWrite(path)) {
       Scanner scanner = new Scanner(System.in);
-      System.out.println("Enter the path to the file to write");
-      path = scanner.nextLine();
-      Service service = new Service(path);
-      getConnectionSQLite();
-      Task task1 = new Task(new Project("job1"), new User("Jimm"), Priority.LOW, "gradle", "online",
-          "write srttings");
-      addTask(task1);
-      addTask(task1);
-      addTask(task1);
-      addTask(task1);
-      Task task2 = new Task(new Project("job9"), new User("Jon"), Priority.HIGH, "maven", "online",
-          "write");
-      updateTask(task2, 19);
-      deleteTask(task2);
-      showAllUsers();
+      System.out.println("Enter the number: 1 - Working with a file; 2 - Working with a database");
+      int command0 = scanner.nextInt();
+      if (command0 == 1) {
+        System.out.println("Enter the path to the file to write");
+        path = scanner.next();
+        ServiceFile serviceFile = new ServiceFile(path);
+        for (; ; ) {
+          System.out.println(
+              "Enter the number of command: 1- Add; 2- Delete; 3- Show list; 4- Show all of Users; 5- Show all of Projects; 6- Show tasks for one user; 7- Exit");
+          command = scanner.next();
+          if (Integer.parseInt(command) == 7) {
+            break;
+          }
+          switch (Integer.parseInt(command)) {
+            case 1:
+              System.out.println("Enter the data in the specified order through ; " + "\n"
+                  + "Name project;Name user;Priority (HIGH,MEDIUM or LOW);Subject;Type;Description");
+              Scanner scanner1 = new Scanner(System.in);
+              String line0 = scanner1.nextLine();
+              String[] result = line0.split(";");
+              if (result.length == 6 && !result[0].trim().isEmpty() && !result[1].trim()
+                  .isEmpty()) {
+                try {
+                  Task task1 = new Task(new Project(result[0]), new User(result[1]),
+                      Priority.valueOf(result[2]), result[3],
+                      result[4],
+                      result[5]);
 
-      Task task3 = new Task(new Project("job1"), new User("Jimm"));
-      service.addTask(task3);
-      User user = new User("Jon");
-      Task task4 = new Task(new Project("job2"), user);
-      service.addTask(task4);
-      service.addTask(new Task(new Project("job3"), new User("Jon")));
-      service.addTask(new Task(new Project("job4"), new User("Jinni")));
-      System.out.println(service.tasksForOneUser("Jon"));
-      service.deleteTask(task3);
-      System.out.println(service.allUsers());
-      System.out.println(service.allProjects());
-      System.out.println(service.allTasks());
-      task4.setDescription("Make backend site");
-      task4.setPriority(Priority.LOW);
-      task4.setType("online");
-      service.closeWrite();
-    } catch (Exception e) {
-      exLogger.error(e.getMessage());
-    } finally {
-      if (connection != null) {
-        try {
-          connection.close();
-        } catch (SQLException ex) {
-          exLogger.error(ex.getMessage());
+                  serviceFile.addTask(task1);
+                } catch (IllegalArgumentException il) {
+                  logger.error("Arguments should not be empty");
+                  break;
+                }
+              } else {
+                logger.info("Data incorrectly entered");
+              }
+              break;
+            case 2:
+              System.out.println("Enter the name of the project to delete");
+              Scanner scanner2 = new Scanner(System.in);
+              serviceFile.deleteTask(scanner2.nextLine());
+              break;
+            case 3:
+              System.out.println(serviceFile.allTasks());
+              break;
+            case 4:
+              System.out.println(serviceFile.allUsers());
+              break;
+            case 5:
+              System.out.println(serviceFile.allProjects());
+              break;
+            case 6:
+              Scanner scanner5 = new Scanner(System.in);
+              System.out.println("Enter the name of user");
+              String nameUser = scanner5.nextLine();
+              System.out.println(serviceFile.tasksForOneUser(nameUser));
+              break;
+            case 7:
+              break;
+            default:
+              logger.error("Wrong number command");
+              break;
+          }
         }
+      } else if (command0 == 2) {
+        ServisSQLite servisSQLite = ServisSQLite.getInstance();
+        servisSQLite.getConnectionSQLite();
+        for (; ; ) {
+          System.out.println(
+              "Enter the number of command: 1- Add; 2- Delete; 3- Show list; 4- Exit");
+          command = scanner.next();
+          if (Integer.parseInt(command) == 4) {
+            break;
+          }
+          switch (Integer.parseInt(command)) {
+            case (1):
+              System.out.println("Enter the data in the specified order through ; " + "\n"
+                  + "Name project;Name user;Priority (HIGH,MEDIUM or LOW);Subject;Type;Description");
+              Scanner scanner3 = new Scanner(System.in);
+              String line = scanner3.nextLine();
+              String[] result = line.split(";");
+              if (result.length == 6 && !result[0].trim().isEmpty() && !result[1].trim()
+                  .isEmpty()) {
+                try {
+                  Task task1 = new Task(new Project(result[0]), new User(result[1]),
+                      Priority.valueOf(result[2]), result[3],
+                      result[4],
+                      result[5]);
+                  servisSQLite.addTask(task1);
+                } catch (IllegalArgumentException il) {
+                  logger.error("Arguments should not be empty");
+                  break;
+                }
+              } else {
+                logger.info("Data incorrectly entered");
+              }
+              break;
+            case (2):
+              System.out.println("Enter the name of the project to delete");
+              Scanner scanner4 = new Scanner(System.in);
+              servisSQLite.deleteTask(scanner4.nextLine());
+              break;
+            case (3):
+              servisSQLite.showAllUsers();
+              break;
+            case (4):
+              break;
+            default:
+              logger.error("Wrong number command");
+              break;
+          }
+        }
+      } else {
+        System.out.println("Wrong command");
       }
+    } catch (IOException e) {
+      logger.error("Error writing to file");
     }
-  }
-
-  public static void getConnectionSQLite() throws SQLException {
-    connection = DriverManager.getConnection("jdbc:sqlite:test.db");
-    Statement statement = connection.createStatement();
-    statement.executeUpdate("CREATE TABLE IF NOT EXISTS projects ("
-        + " id          INTEGER PRIMARY KEY AUTOINCREMENT,"
-        + " project     TEXT NOT NULL,"
-        + " user        TEXT NOT NULL,"
-        + " priority    TEXT,"
-        + " description TEXT,"
-        + " subject     TEXT,"
-        + " type        TEXT"
-        + ")");
-  }
-
-  private static void addTask(Task task) throws SQLException {
-    FileWrite.write("Add task " + task + "\n");
-    PreparedStatement insertStmt = connection.prepareStatement(
-        "INSERT INTO projects(project, user, priority,subject,type,description) VALUES(?,?,?,?,?,?)");
-    insertStmt.setString(1, task.getProject().getNameProject());
-    insertStmt.setString(2, task.getUser().getNameUser());
-    insertStmt.setString(3, task.getPriority().toString());
-    insertStmt.setString(4, task.getSubject());
-    insertStmt.setString(5, task.getType());
-    insertStmt.setString(6, task.getDescription());
-    insertStmt.executeUpdate();
-    exLogger.info("Add task " + task + "\n");
-    ResultSet generatedKeys = insertStmt.getGeneratedKeys();
-    if (generatedKeys.next()) {
-      System.out.format("Проект %s добавлен. id: %d%n",
-          task.getProject().getNameProject(), generatedKeys.getLong(1));
-    }
-  }
-
-  private static void showAllUsers() throws SQLException {
-    System.out.format("|%4s|%8s|%6s|%8s|%15s|%10s|%6s|%n", "id", "project", "user", "priority",
-        "description", "subject", "type");
-    System.out.println("|----|--------|------|--------|---------------|----------|------|");
-    Statement statement = connection.createStatement();
-    ResultSet rs = statement.executeQuery(
-        "SELECT * FROM projects");
-    while (rs.next()) {
-      int id = rs.getInt(1);
-      String project = rs.getString("project");
-      String user = rs.getString("user");
-      String priority = rs.getString("priority");
-      String subject = rs.getString("subject");
-      String type = rs.getString("type");
-      String description = rs.getString("description");
-      System.out
-          .format("|%4d|%8s|%6s|%8s|%15s|%10s|%6s|%n", id, project, user, priority, description,
-              subject, type);
-    }
-  }
-
-  private static void deleteTask(Task task) throws SQLException {
-    FileWrite.write("Delete task " + task + "\n");
-    PreparedStatement updateStmt = connection.prepareStatement(
-        "DELETE FROM projects WHERE user = ?");
-    updateStmt.setString(1, task.getUser().getNameUser());
-    updateStmt.executeUpdate();
-    exLogger.info("Delete task " + task + "\n");
-  }
-
-  private static void updateTask(Task newTask, int id) throws SQLException {
-    FileWrite.write("Changed task with ID = " + id + " on new " + newTask + "\n");
-    PreparedStatement updateStmt = connection.prepareStatement(
-        "UPDATE projects SET project = ?,user = ?,priority = ?,subject = ?,type = ?,description = ? WHERE id = ?");
-    updateStmt.setString(1, newTask.getProject().getNameProject());
-    updateStmt.setString(2, newTask.getUser().getNameUser());
-    updateStmt.setString(3, newTask.getPriority().toString());
-    updateStmt.setString(4, newTask.getSubject());
-    updateStmt.setString(5, newTask.getType());
-    updateStmt.setString(6, newTask.getDescription());
-    updateStmt.setInt(7, id);
-    updateStmt.executeUpdate();
-    exLogger.info("Changed task with ID = " + id + " on new " + newTask + "\n");
   }
 }
 

@@ -1,8 +1,11 @@
-package soft;
+package soft.model;
 
 public class Project {
 
   private String nameProject;
+
+  public Project() {
+  }
 
   public Project(String nameProject) {
     this.nameProject = nameProject;
@@ -10,15 +13,6 @@ public class Project {
 
   public String getNameProject() {
     return nameProject;
-  }
-
-  public void setNameProject(String nameProject) throws Exception {
-    if (nameProject != null) {
-      this.nameProject = nameProject;
-    } else {
-      throw new Exception("You have entered the wrong name.");
-
-    }
   }
 
   @Override

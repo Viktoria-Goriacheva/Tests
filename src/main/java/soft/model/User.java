@@ -1,8 +1,11 @@
-package soft;
+package soft.model;
 
 public class User {
 
   private String nameUser;
+
+  public User() {
+  }
 
   public User(String nameUser) {
     this.nameUser = nameUser;
@@ -10,14 +13,6 @@ public class User {
 
   public String getNameUser() {
     return nameUser;
-  }
-
-  public void setNameUser(String nameUser) throws Exception {
-    if (nameUser != null) {
-      this.nameUser = nameUser;
-    } else {
-      throw new Exception("You have entered the wrong name.");
-    }
   }
 
   @Override

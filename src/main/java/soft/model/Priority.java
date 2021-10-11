@@ -1,4 +1,4 @@
-package soft;
+package soft.model;
 
 public enum Priority {
   HIGH,

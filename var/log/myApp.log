@@ -1,0 +1,119 @@
+[INFO ] 2021-10-11 14:27:51.796 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 14:29:20.777 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 14:35:51.083 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 14:39:18.536 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 14:46:02.931 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:09:07.043 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:11:31.966 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:12:08.959 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:15:28.198 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:28:16.806 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:33:27.771 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:34:50.831 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:36:22.183 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:40:56.776 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:41:07.419 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user1 | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:43:19.761 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:43:35.885 [main] ServiceFile - Add task Project: Name Project: Name project1 | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:44:20.272 [main] ServiceFile - Delete task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:54:23.052 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:54:40.061 [main] ServiceFile - Add task Project: Name Project: Name project1 | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 15:54:45.867 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:55:12.973 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:55:16.345 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 15:58:17.824 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 16:02:36.043 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 16:02:51.976 [main] ServiceFile - Add task Project: Name Project: Name1 project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 16:03:03.944 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 16:03:32.853 [main] ServiceFile - Delete task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 16:36:42.155 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 16:50:34.081 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 16:52:19.302 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 16:52:31.322 [main] ServiceFile - Add task Project: Name Project: Name1 project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 16:52:42.117 [main] ServiceFile - Delete task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 17:06:27.301 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 17:07:16.233 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 17:20:56.235 [main] ServisSQLite - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 17:21:35.604 [main] ServisSQLite - Delete task where project = Name project
+
+[INFO ] 2021-10-11 17:21:52.767 [main] Main - Data incorrectly entered
+[ERROR] 2021-10-11 17:45:16.583 [main] FileWrite - Error creating of file
+[ERROR] 2021-10-11 17:46:26.105 [main] FileWrite - Error creating of file
+[INFO ] 2021-10-11 17:46:52.030 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 17:47:02.000 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 17:47:21.439 [main] ServiceFile - Add task Project: Name Project: Name1 project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 17:47:53.138 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name1 user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[ERROR] 2021-10-11 17:50:46.856 [main] FileWrite - Error creating of file
+[INFO ] 2021-10-11 17:59:57.846 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:00:03.382 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:00:32.969 [main] ServiceFile - Add task Project: Name Project: Name project111 | User: Name User: Name user11 | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:00:42.689 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user11 | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:01:39.294 [main] ServiceFile - Delete task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:03:41.377 [main] ServisSQLite - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:03:54.266 [main] ServisSQLite - Delete task where project = Name project
+
+[INFO ] 2021-10-11 18:11:28.136 [main] ServiceFile - Add task Project: Name Project:  | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description 
+
+[INFO ] 2021-10-11 18:13:54.557 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User:  | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:14:17.525 [main] ServiceFile - Add task Project: Name Project:  | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:22:26.481 [main] ServiceFile - Add task Project: Name Project:  | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:29:05.462 [main] ServiceFile - Add task Project: Name Project:  | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[ERROR] 2021-10-11 18:31:11.343 [main] User - You have entered the wrong name.
+[INFO ] 2021-10-11 18:31:11.352 [main] ServiceFile - Add task Project: Name Project:  | User: Name User: null | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[ERROR] 2021-10-11 18:34:01.427 [main] Project - You have entered the wrong name.
+[INFO ] 2021-10-11 18:34:01.437 [main] ServiceFile - Add task Project: Name Project: null | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:39:49.037 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 18:40:08.167 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 18:40:30.059 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 18:40:38.120 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 18:41:21.110 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description: Description
+
+[INFO ] 2021-10-11 18:43:44.730 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type:  | Description: Description
+
+[INFO ] 2021-10-11 18:44:03.715 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 18:44:20.836 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 18:44:37.432 [main] ServiceFile - Add task Project: Name Project: Name project | User: Name User: Name user | Priority: MEDIUM | Subject: Subject | Type: Type | Description:  
+
+[INFO ] 2021-10-11 19:15:45.950 [main] Main - Data incorrectly entered
+[ERROR] 2021-10-11 19:16:08.023 [main] Main - Arguments should not be empty
+[INFO ] 2021-10-11 19:16:27.340 [main] Main - Data incorrectly entered
+[INFO ] 2021-10-11 19:21:10.848 [main] Main - Data incorrectly entered
+[ERROR] 2021-10-11 19:21:29.116 [main] Main - Arguments should not be empty
+[INFO ] 2021-10-11 19:21:40.414 [main] ServisSQLite - Add task Project: Name Project: dsfsd | User: Name User: ad | Priority: LOW | Subject: sfsfrdrf | Type: afsdsds | Description: ad
+

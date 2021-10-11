@@ -1,0 +1,27 @@
+[INFO ] 2021-10-10 02:55:09.796 [main] ServisSQLite - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+
+[INFO ] 2021-10-10 02:55:09.811 [main] ServisSQLite - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+
+[INFO ] 2021-10-10 02:55:09.819 [main] ServisSQLite - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+
+[INFO ] 2021-10-10 02:55:09.826 [main] ServisSQLite - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: LOW | Subject: gradle | Type: online | Description: write srttings
+
+[INFO ] 2021-10-10 02:55:09.834 [main] ServisSQLite - Changed task with ID = 19 on new Project: Name Project: job9 | User: Name User: Jon | Priority: HIGH | Subject: maven | Type: online | Description: write
+
+[INFO ] 2021-10-10 02:55:09.837 [main] ServisSQLite - Delete task Project: Name Project: job9 | User: Name User: Jon | Priority: HIGH | Subject: maven | Type: online | Description: write
+
+[INFO ] 2021-10-10 02:55:09.860 [main] ServiceFile - Add task Project: Name Project: job1 | User: Name User: Jimm | Priority: null | Subject: null | Type: null | Description: null
+
+[INFO ] 2021-10-10 02:55:09.861 [main] ServiceFile - Add task Project: Name Project: job2 | User: Name User: Jon | Priority: null | Subject: null | Type: null | Description: null
+
+[INFO ] 2021-10-10 02:55:09.862 [main] ServiceFile - Add task Project: Name Project: job3 | User: Name User: Jon | Priority: null | Subject: null | Type: null | Description: null
+
+[INFO ] 2021-10-10 02:55:09.863 [main] ServiceFile - Add task Project: Name Project: job4 | User: Name User: Jinni | Priority: null | Subject: null | Type: null | Description: null
+
+[INFO ] 2021-10-10 02:55:09.865 [main] ServiceFile - Delete task Project: Name Project: job1 | User: Name User: Jimm | Priority: null | Subject: null | Type: null | Description: null
+
+[INFO ] 2021-10-10 02:55:09.867 [main] InfoLogger - Appointed new
+a descriptionName User: Jon
+[INFO ] 2021-10-10 02:55:09.868 [main] InfoLogger - Name User: Jon Appointed new
+a priorityLOW
+[INFO ] 2021-10-10 02:55:09.869 [main] InfoLogger - Name User: Jon Appointed new a type - online
